@@ -1,5 +1,5 @@
 public class Prueba {
-    public static int distanciaEdicion(String s1, String s2, int cont) {
+    public static int edit(String s1, String s2, int cont) {
         for (int i = 0; i < s1.length(); i++) {
             if (s1.length() == 0 || s2.length() == 0)
               return cont + s1.length() + s2.length();
