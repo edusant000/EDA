@@ -1,10 +1,15 @@
-public class Coche () {
-    int km = 0;
-    boolean verificado;
+public class Coche {
+    private int km = 0;
+    private boolean verificado;
 
     public Coche (int km, boolean verificado) {
         km = this.km;
         verificado = this.verificado;
+    }
+
+    public Coche () {
+        km = 0;
+        verificado = false;
     }
 
     public int getKm() {
@@ -15,8 +20,8 @@ public class Coche () {
         return verificado;
     }
 
-    pubic static void main (String args[]) {
+    public static void main (String args[]) {
         Coche eduaroCoche = new Coche(10, true);
-        System.out.println(eduaroCoche.getKm);
+        System.out.println(eduaroCoche.getKm());
     }
 }
