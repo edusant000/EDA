@@ -13,7 +13,7 @@ public class Prueba {
 
     public static void main(String[] args) {
 
-        String s1 = "ernando";
+        String s1 = "xxxxxxx";
         String s2 = "Fernando";
         int cont = 0;
         System.out.println(Prueba.edit(s1, s2, cont));
