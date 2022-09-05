@@ -1,3 +1,5 @@
+import java.util.*;  
+
 public class EjSort {
     
 
@@ -132,10 +134,36 @@ public class EjSort {
             return false;
         else if (m >= n/2)
             return true;
-        System.out.println(m+1);
         return esPrimario(n, m+1);
-        
     }
+    
+    public static int[] quickSort(int n, int m, int[] arr) {
+        int j;
+        if (n < m) {
+            j = partition(n, m);
+            quickSort(n, j);
+            quickSort(j+1, m);
+        }
+
+    }
+
+    public static int partition(int n, int m, int[] arr) {
+        if (arr[n] > arr[m]){
+            int aux = arr[n];
+            arr[n] = arr[m];
+            arr[m] = aux;
+            n++;
+            m--;
+        }
+    }
+
+    public static void preOrden(Nodo<Integer> n, ArrayList<Integer>() lista) {
+
+    }
+
+
+
+
  
     
     
@@ -154,13 +182,13 @@ public class EjSort {
             //int [] arr = {1, 4, 6, 8, 3, 5};
             //System.out.println(EjSort.mayorElemento(arr, 0, 0));
             //System.out.println(EjSort.ordenarArray(arr, 0));
-            String s = "hola";
+            //String s = "hola";
             //EjSort.invertirString("pene", 0, s.length());
             //System.out.println(s.substring(0, 4));
             //System.out.println(s.charAt(3));
             //System.out.println(EjSort.encontrarFactorial(6));     
             //System.out.println(EjSort.encontrarBinario(309, 309%2));
-            System.out.println(EjSort.esPrimario(1223, 2));
+            //System.out.println(EjSort.esPrimario(1223, 2));
     }
 
 }
